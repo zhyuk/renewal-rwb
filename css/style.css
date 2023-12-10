@@ -99,6 +99,13 @@ section {
     transform: translate(-50%, -50%);
 }
 
+/* car */
+model-viewer {
+    --poster-color: #e2e8f0;
+    --progress-bar-color: rgba(30, 41, 59, .5);
+    --progress-bar-height: 10px;
+}
+
 /* intro */
 #intro .inner {
     display: flex;
@@ -201,6 +208,11 @@ section {
     padding: 0;
     margin: 0;
 }
+#bodykit h1 {
+    width: calc(100vw * 1280 / 1920);
+    margin: 0 auto;
+    font-size: calc(100vw * 48 / 1920);
+}
 
 .carousel {
     position: relative;
@@ -262,90 +274,6 @@ section {
 #bodykit img {
     width: 100%;
     height: 100%;
-}
-
-#bodykit #modal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, .9);
-    z-index: 4;
-    border: solid 1px red;
-}
-
-#bodykit #modal .inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-#bodykit #modal .inner .content-area {
-    display: flex;
-    width: calc(100vw * 1280 / 1920);
-    height: calc(100vw * 500 / 1920);
-    background: var(--black);
-}
-
-#bodykit #modal .inner .content-area li {
-    width: calc(100vw * 600 / 1920);
-    border: solid 1px blue;
-}
-
-#bodykit #modal .inner .content-area .left {
-    width: calc(100vw * 600 / 1920);
-    height: calc(100vw * 500 / 1920);
-    margin-right: calc(100vw * 80 / 1920);
-}
-
-#bodykit #modal .inner .content-area .left p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: calc(100vw * 100 / 1920);
-    font-size: calc(100vw * 40 / 1920);
-    font-weight: 700;
-}
-
-#bodykit #modal .inner .content-area .left img {
-    width: 100%;
-    height: calc(100vw * 400 / 1920);
-}
-
-#bodykit #modal .inner .content-area .right p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: calc(100vw * 100 / 1920);
-    font-size: calc(100vw * 28 / 1920);
-}
-
-#bodykit #modal .inner .content-area .right .info-text {
-    width: calc(100vw * 600 / 1920);
-    height: calc(100vw * 400 / 1920);
-    border: solid 1px blue;
-}
-
-#bodykit #modal .inner .content-area .right .info-text li {
-    border: solid 1px purple;
-}
-
-#bodykit #modal button {
-    position: absolute;
-    top: calc(100vw * 50 / 1920);
-    right: calc(100vw * 50 / 1920);
-    color: var(--gold);
-    background: transparent;
-    border: none;
-    font-size: calc(100vw * 40 / 1920);
 }
 
 /* product */
@@ -411,8 +339,6 @@ section {
     font-size: calc(100vw * 30 / 1920);
     font-weight: 700;
 }
-
-/* company */
 
 /* footer */
 #footer {
